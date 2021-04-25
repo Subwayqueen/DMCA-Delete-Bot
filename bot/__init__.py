@@ -4,7 +4,7 @@ from bot.configs import Config
 
 BOT_TOKEN = Config.BOT_TOKEN
 TG_USER_SESSION = Config.TG_USER_SESSION
-SESSION_NAME = "DMCA_DelBot"
+SESSION_NAME = "DMCAFlixBot"
 API_ID = Config.API_ID
 API_HASH = Config.API_HASH
 DATABASE_URL = Config.DATABASE_URL
