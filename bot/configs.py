@@ -18,7 +18,7 @@ This is Telegram DMCA Messages Delete Bot.
 
 Forward me DMCA Notice Message which has Links of your Telegram Channel Messages, I will try to delete those Files from your Channel.
 
-**Note:** __Don't Forget to first add me to your channel as Admin with Messages Delete Right!__
+**Note:** **Don't Forget To First Add Me To Your Channel As Admin With Messages Delete Right! ⚠**
 """
 	HELP_TEXT = """
 **How to Use Me?**
@@ -26,18 +26,18 @@ Forward me DMCA Notice Message which has Links of your Telegram Channel Messages
 > Add me to Channel as Admin with Delete Messages Right.
 > Make sure you are Admin in Channel & have Delete Messages Right.
 > Forward me DMCA Notice Message.
-> Wait Till I Delete Messages 😂
+> Wait Till I Delete Messages.
 
 **Tip:** Also you can send a list which has links of messages.
 
-**Note:** __In some case, if your channel is or was private before adding me than I can't delete those broadcasted messages. If need any help ask in [Support Group](https://t.me/linux_repo)!__
+**Note:** **In some case, if your channel is or was private before adding me than I can't delete those broadcasted messages. If need any help ask in [SUPPORT BOT](https://t.me/FlixHelpBot)!**
 """
 	ABOUT_TEXT = """
 This is Telegram DMCA Messages Delete Bot.
 
 Forward me DMCA Notice Message which has Links of your Telegram Channel Messages, I will try to delete those Files from your Channel.
 
-🤖 **My Name:** [DMCA Delete Bot](https://t.me/DMCA_DelBot)
+🤖 **My Name:** [DMCA Delete Bot](https://t.me/DCMAFlixBot)
 
 📝 **Language:** [Python3](https://www.python.org)
 
@@ -45,11 +45,11 @@ Forward me DMCA Notice Message which has Links of your Telegram Channel Messages
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Developer:** @Iggie
 
-💸 **Donate:** [PayPal](https://www.paypal.me/AbirHasan2005)
+💸 **Donate:** [PayPal](https://www.paypal.me/PremiumBarn)
 
-👥 **Support Group:** [Linux Repositories](https://t.me/linux_repo)
+👥 **Channel:** [Flix Bots](https://t.me/FlixBots)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/Discovery_Updates)
+📢 **Support Bot:** [Flix Help Bot](https://t.me/FlixHelpBot)
 """
