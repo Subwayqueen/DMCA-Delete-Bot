@@ -15,7 +15,7 @@ Bot can't delete 24 hours old Messages that's why using User Client. So when you
 Best if you Host on Heroku `#Abuse_Heroku` !
 
 ### Deploy to Heroku:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Discovery-Projects/DMCA-Delete-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SubwayQueen/DMCA-Delete-Bot)
 
 ## Configs:
 - `API_ID` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
