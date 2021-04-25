@@ -53,7 +53,7 @@ async def startbot(bot: Bot, cmd: Message):
 		await db.add_user(cmd.chat.id)
 		await bot.send_message(
 			LOGS_CHANNEL,
-			f"#NEW_USER: \n\nNew User [{cmd.chat.first_name}](tg://user?id={cmd.chat.id}) started @DMCA_DelBot !!"
+			f"#NEW_USER: \n\nNew User [{cmd.chat.first_name}](tg://user?id={cmd.chat.id}) Started @DMCAFlixBot !!"
 		)
 	if UPDATES_CHANNEL is not None:
 		try:
@@ -61,7 +61,7 @@ async def startbot(bot: Bot, cmd: Message):
 			if user.status == "kicked":
 				await bot.send_message(
 					chat_id=cmd.chat.id,
-					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -83,7 +83,7 @@ async def startbot(bot: Bot, cmd: Message):
 		except Exception:
 			await bot.send_message(
 				chat_id=cmd.chat.id,
-				text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+				text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 				parse_mode="markdown",
 				disable_web_page_preview=True)
 			return
@@ -94,15 +94,15 @@ async def startbot(bot: Bot, cmd: Message):
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[
-					InlineKeyboardButton("Help", callback_data="helpmeh"),
-					InlineKeyboardButton("About", callback_data="aboutmeh")
+					InlineKeyboardButton("𝗛𝗲𝗹𝗽", callback_data="helpmeh"),
+					InlineKeyboardButton("𝗔𝗯𝗼𝘂𝘁", callback_data="aboutmeh")
 				],
 				[
-					InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-					InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+					InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔉", url="https://t.me/FlixBots"),
+					InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot")
 				],
 				[
-					InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")
+					InlineKeyboardButton("𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 - @FlixBots", url="https://t.me/Iggie")
 				]
 			]
 		),
@@ -116,7 +116,7 @@ async def helpmsg(bot: Bot, cmd: Message):
 		await db.add_user(cmd.chat.id)
 		await bot.send_message(
 			LOGS_CHANNEL,
-			f"#NEW_USER: \n\nNew User [{cmd.chat.first_name}](tg://user?id={cmd.chat.id}) started @DMCA_DelBot !!"
+			f"#NEW_USER: \n\nNew User [{cmd.chat.first_name}](tg://user?id={cmd.chat.id}) started @DMCAFlixBot !!"
 		)
 	if UPDATES_CHANNEL is not None:
 		try:
@@ -124,7 +124,7 @@ async def helpmsg(bot: Bot, cmd: Message):
 			if user.status == "kicked":
 				await bot.send_message(
 					chat_id=cmd.chat.id,
-					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -146,7 +146,7 @@ async def helpmsg(bot: Bot, cmd: Message):
 		except Exception:
 			await bot.send_message(
 				chat_id=cmd.chat.id,
-				text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+				text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 				parse_mode="markdown",
 				disable_web_page_preview=True)
 			return
@@ -157,15 +157,15 @@ async def helpmsg(bot: Bot, cmd: Message):
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[
-					InlineKeyboardButton("Home", callback_data="gotohome"),
-					InlineKeyboardButton("About", callback_data="aboutmeh")
+					InlineKeyboardButton("𝗛𝗼𝗺𝗲", callback_data="gotohome"),
+					InlineKeyboardButton("𝗔𝗯𝗼𝘂𝘁", callback_data="aboutmeh")
 				],
 				[
-					InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-					InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+					InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔉", url="https://t.me/FlixBots"),
+					InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧", url="https://t.me/FlixHelpBot")
 				],
 				[
-					InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")
+					InlineKeyboardButton("𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 - @FlixBots", url="https://t.me/Iggie")
 				]
 			]
 		),
@@ -179,7 +179,7 @@ async def main(bot: Bot, message: Message):
 		await db.add_user(message.chat.id)
 		await bot.send_message(
 			LOGS_CHANNEL,
-			f"#NEW_USER: \n\nNew User [{message.chat.first_name}](tg://user?id={message.chat.id}) started @DMCA_DelBot !!"
+			f"#NEW_USER: \n\nNew User [{message.chat.first_name}](tg://user?id={message.chat.id}) started @DMCAFlixBot !!"
 		)
 	UPDATES_CHANNEL = UPDATES_CHANNEL
 	if UPDATES_CHANNEL:
@@ -188,7 +188,7 @@ async def main(bot: Bot, message: Message):
 			if user.status == "kicked":
 				await bot.send_message(
 					chat_id=message.chat.id,
-					text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Sorry Sir, You are Banned to use me. Contact my [Support Bot](https://t.me/FlixHelpBot)",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -210,7 +210,7 @@ async def main(bot: Bot, message: Message):
 		except Exception:
 			await bot.send_message(
 				chat_id=message.chat.id,
-				text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+				text="Something went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).",
 				parse_mode="markdown",
 				disable_web_page_preview=True)
 			return
@@ -307,12 +307,12 @@ async def main(bot: Bot, message: Message):
 			await send.edit(
 				f"Unable to Delete Message in [{channel.title}](https://t.me/c/{channel.id}/{one_msg}) !\n\n**Error:** `{e}`",
 				reply_markup=InlineKeyboardMarkup(
-					[[InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]),
+					[[InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot")]]),
 				disable_web_page_preview=True, parse_mode="Markdown")
 		else:
 			await send.edit(f"Unable to Delete Message in @{channel.username} !\n\n**Error:** `{e}`",
 							reply_markup=InlineKeyboardMarkup(
-								[[InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]),
+								[[InlineKeyboardButton("Support Bot", url="https://t.me/FlixHelpBot")]]),
 							disable_web_page_preview=True, parse_mode="Markdown")
 
 
@@ -398,11 +398,11 @@ async def button(bot: Bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[InlineKeyboardButton("Home", callback_data="gotohome"),
-					 InlineKeyboardButton("Help", callback_data="helpmeh")],
-					[InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-					 InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-					[InlineKeyboardButton("Donate Now (PayPal)", url="https://www.paypal.me/AbirHasan2005")]
+					[InlineKeyboardButton("𝗛𝗼𝗺𝗲", callback_data="gotohome"),
+					 InlineKeyboardButton("𝗛𝗲𝗹𝗽", callback_data="helpmeh")],
+					[InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot"),
+					 InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔉", url="https://t.me/FlixBots")],
+					[InlineKeyboardButton("𝗗𝗢𝗡𝗔𝗧𝗘 (PayPal)", url="https://www.paypal.me/PremiumBarn")]
 				]
 			)
 		)
@@ -413,10 +413,10 @@ async def button(bot: Bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[InlineKeyboardButton("Home", callback_data="gotohome"),
-					 InlineKeyboardButton("About", callback_data="aboutmeh")],
-					[InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-					 InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")]
+					[InlineKeyboardButton("𝗛𝗼𝗺𝗲", callback_data="gotohome"),
+					 InlineKeyboardButton("𝗔𝗯𝗼𝘂𝘁", callback_data="aboutmeh")],
+					[InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot"),
+					 InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔉", url="https://t.me/FlixBots")]
 				]
 			)
 		)
@@ -428,15 +428,15 @@ async def button(bot: Bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Help", callback_data="helpmeh"),
-						InlineKeyboardButton("About", callback_data="aboutmeh")
+						InlineKeyboardButton("𝗛𝗲𝗹𝗽", callback_data="helpmeh"),
+						InlineKeyboardButton("𝗔𝗯𝗼𝘂𝘁", callback_data="aboutmeh")
 					],
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+						InlineKeyboardButton("𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🔉", url="https://t.me/FlixBots"),
+						InlineKeyboardButton("𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗕𝗢𝗧 👥", url="https://t.me/FlixHelpBot")
 					],
 					[
-						InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")
+						InlineKeyboardButton("𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 - @FlixBots", url="https://t.me/Iggie")
 					]
 				]
 			)
